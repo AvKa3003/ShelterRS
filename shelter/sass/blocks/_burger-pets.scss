@@ -1,0 +1,11 @@
+.burger {
+  background-color: $color-light-xl;
+
+  .nav-list__item a {
+    color: $color-dark-l;
+  }
+
+  .nav-list--selected a {
+    color: $color-dark-3xl;
+  }
+}

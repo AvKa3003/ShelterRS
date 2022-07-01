@@ -1,0 +1,56 @@
+.burger-container {
+  // z-index: 3;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  visibility: visible;
+  transition: visibility ease .3s;
+  &--hidden {
+    visibility: hidden;
+  }
+}
+
+
+
+
+.burger-blocker {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.39);
+  opacity: 1;
+  visibility: visible;
+  transition: all ease .3s;
+  &--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.burger {
+  position: absolute;
+  // z-index: 3;
+  width: 320px;
+  height: 100vh;
+  right: 0;
+  background-color: $color-dark-3xl;
+  transition: right ease .3s;
+
+  &--hidden {
+    right: -320px;
+  }
+}
+
+.body-blocker {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.burger-icon--opened {
+  transform: rotate(90deg);
+}

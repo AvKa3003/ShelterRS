@@ -1,0 +1,26 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: $color-light-xl;
+  h1 {
+    color: $color-dark-l;
+  }
+  
+  .nav-list__item a {
+    color: $color-dark-l;
+    &:hover {
+      color: $color-dark-3xl;
+    }
+    transition: color .3s ease;
+  }
+
+  .logo-subtitle, .nav-list--selected a {
+    color: $color-dark-3xl;
+  }
+
+  .burger-icon {
+    &__line {
+      background-color: $color-dark-3xl;
+    }
+  }
+}

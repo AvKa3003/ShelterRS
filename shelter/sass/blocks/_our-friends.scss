@@ -1,0 +1,83 @@
+.our-friends {
+
+  h3 {
+    // max-width: 400px;
+    text-align: center;
+  }
+
+  .slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+
+    &__arrow {
+      width: 52px;
+      height: 52px;
+      border: $border-primary;
+      border-radius: 100px;
+      background: no-repeat center;
+      background-image: url(../../assets/icons/Arrow.svg);
+      cursor: pointer;
+
+      &--rotated {
+        transform: rotate(180deg);
+      }
+
+      &--mobile {
+        margin-top: 20px;
+        display: none;
+        gap: 80px;
+      }
+
+      @media screen and (max-width: 767px) {
+        &--pc {
+          display: none;
+        }
+
+        &--mobile {
+          display: flex;
+        }
+      }
+    }
+
+    &__inner {
+      position: relative;
+      overflow: hidden;
+      width: calc(100% - 200px);
+      height: 435px;
+      @media screen and (max-width: 1280px) {
+        width: calc(100% - 300px);
+      }
+
+      @media screen and (max-width: 1000px) {
+        width: calc(100% - 140px);
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 1280px) {
+      margin: 0 30px;
+
+      .pet:nth-child(3) {
+        display: none;
+      }
+
+      .slider__inner {
+        gap: 40px
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      justify-content: center;
+      padding: 42px 0;
+      .pet:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}

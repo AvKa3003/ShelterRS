@@ -1,0 +1,138 @@
+h2 {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  color: $color-light-xl;
+}
+
+h3 {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color-dark-l;
+}
+
+// .h3-mobile {
+//   font-family: 'Georgia';
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 25px;
+//   line-height: 130%;
+//   letter-spacing: 0.06em;
+//   color: #C4C4C4;
+// }
+
+@mixin mobile-h3() {
+  display: block;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color-dark-l;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: $color-dark-l;
+}
+
+h5 {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: $color-dark-l;
+}
+
+@mixin mobile-h5() {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: $color-dark-l;
+}
+
+@mixin h5-modal-window() {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: $color-dark-s;
+}
+
+.paragraph-l {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #C4C4C4;
+}
+
+.paragraph-s {
+  font-family: 'Arial';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: $color-dark-m;
+}
+
+@mixin paragraph-mobile-menu() {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 160%;
+  color: $color-dark-s;
+}
+
+h1 {
+  font-family: 'Georgia', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: $color-primary;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.logo-subtitle {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: #C4C4C4;
+}
+
+.button-regular {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: $color-dark-3xl;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}

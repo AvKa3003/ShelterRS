@@ -1,0 +1,41 @@
+.list-navigator {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 45px;
+}
+
+.circle-btn {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border: solid 2px $color-primary;
+  border-radius: 100px;
+  cursor: pointer;
+
+  svg {
+    fill: $color-dark-3xl;
+  }
+}
+
+.filled-btn {
+  cursor: default;
+}
+
+.rotated-btn svg{
+  transform: rotate(180deg);
+}
+
+.unactive-btn {
+  border-color: $color-dark-s;
+  cursor: default;
+  svg {
+    fill: $color-dark-s;
+  }
+}
+
+.filled-btn {
+  background-color: $color-primary;
+}

@@ -1,0 +1,15 @@
+.hover-light {
+  transition: background-color ease .3s, border-color ease .3s;
+  &:hover {
+    background-color: $color-primary-light;
+    border-color: $color-primary-light;
+  }
+}
+
+// .active-dark {
+//   transition: background-color ease .3s, border-color ease .3s;
+//   &:hover {
+//     background-color: $color-primary-light;
+//     border-color: $color-primary-light;
+//   }
+// }

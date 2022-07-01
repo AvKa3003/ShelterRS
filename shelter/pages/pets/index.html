@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/pets/main.css">
+  <title>Our friends</title>
+</head>
+<body>
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="svg-last">
+        <path d="M10.0055 6.08789L0.972265 10.7852V9.44727L8.48203 5.53125L0.972265 1.625V0.287109L10.0055 4.98438V6.08789ZM24.0766 6.08789L15.0434 10.7852V9.44727L22.5531 5.53125L15.0434 1.625V0.287109L24.0766 4.98438V6.08789Z"/>
+    </symbol>
+    <symbol id="svg-next">
+        <path d="M9.04102 6.08789L0.0078125 10.7852V9.44727L7.51758 5.53125L0.0078125 1.625V0.287109L9.04102 4.98438V6.08789Z"/>
+    </symbol>
+  </svg>
+  <div class="wrapper">
+    <div class="burger-container burger-container--hidden">
+      <div class="burger-blocker burger-blocker--hidden">
+      </div>
+      <div class="burger burger--hidden">
+        <ul class="nav-list nav-list--mobile paragraph-l">
+          <li class="nav-list__item"><a href="../main/index.html">About the shelter</a></li>
+          <li class="nav-list__item nav-list--selected"><a href="./">Our pets</a></li>
+          <li class="nav-list__item"><a href="../main/index.html#section-help">Help the shelter</a></li>
+          <li class="nav-list__item"><a href="#section-footer">Contacts</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="popup-container popup-container--hidden">
+      <div class="popup">
+        <div class="popup__close-btn"></div>
+        <img src="" class="popup__image" alt="Popup image">
+        <div class="popup__info">
+          <h3 class="popup__title"></h3>
+          <h4 class="popup__subtitle"></h4>
+          <h5 class="popup__description"></h5>
+          <ul class="popup__pet-stats">
+            <li class="popup__age"></li>
+            <li class="popup__inoculations"></li>
+            <li class="popup__diseases"></li>
+            <li class="popup__parasites"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <nav class="top-nav">
+          <a href="../main/index.html" class="top-nav__logo">
+            <h1>
+              Cozy House
+            </h1>
+            <p class="logo-subtitle">
+              Shelter for pets in Boston
+            </p>
+          </a>
+          <ul class="nav-list nav-list--pc paragraph-l">
+            <li class="nav-list__item"><a href="../main/index.html">About the shelter</a></li>
+            <li class="nav-list__item nav-list--selected"><a href="./">Our pets</a></li>
+            <li class="nav-list__item"><a href="../main/index.html#section-help">Help the shelter</a></li>
+            <li class="nav-list__item"><a href="#section-footer">Contacts</a></li>
+          </ul>
+          <div class="burger-icon">
+            <div class="burger-icon__line"></div>
+            <div class="burger-icon__line"></div>
+            <div class="burger-icon__line"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="dark-section section-padding">
+      <div class="container">
+        <h3 class="center-heading">Our friends who<br>are looking for a house</h3>
+        <div class="pets-list">
+            <div class="pet">
+              <img src="../../assets/pictures/pets-katrine.png" alt="" class="pet__image">
+              <h4 class="pet__title">Katrine</h4>
+              <p class="pet__button button-regular">Learn more</p>
+            </div>
+            <div class="pet">
+              <img src="../../assets/pictures/pets-jennifer.png" alt="" class="pet__image">
+              <h4 class="pet__title">Jennifer</h4>
+              <p class="pet__button button-regular">Learn more</p>
+            </div>
+            <div class="pet">
+              <img src="../../assets/pictures/pets-woody.png" alt="" class="pet__image">
+              <h4 class="pet__title">Woody</h4>
+              <p class="pet__button button-regular">Learn more</p>
+            </div>
+            <div class="pet">
+              <img src="../../assets/pictures/pets-sophia.png" alt="" class="pet__image">
+              <h4 class="pet__title">Sophia</h4>
+              <p class="pet__button button-regular">Learn more</p>
+            </div>
+            <div class="pet">
+              <img src="../../assets/pictures/pets-timmy.png" alt="" class="pet__image">
+              <h4 class="pet__title">Timmy</h4>
+              <p class="pet__button button-regular">Learn more</p>
+            </div>
+            <div class="pet">
+              <img src="../../assets/pictures/pets-charly.png" alt="" class="pet__image">
+              <h4 class="pet__title">Charly</h4>
+              <p class="pet__button button-regular">Learn more</p>
+            </div>
+            <div class="pet mobile-pet-hidden">
+              <img src="../../assets/pictures/pets-scarlet.png" alt="" class="pet__image">
+              <h4 class="pet__title">Scarlet</h4>
+              <p class="pet__button button-regular">Learn more</p>
+            </div>
+            <div class="pet mobile-pet-hidden">
+              <img src="../../assets/pictures/pets-freddie.png" alt="" class="pet__image">
+              <h4 class="pet__title">Freddie</h4>
+              <p class="pet__button button-regular">Learn more</p>
+            </div>
+          </div>
+      </div>
+      <div class="list-navigator">
+        <div class="circle-btn unactive-btn rotated-btn">
+          <svg width="25" height="11">
+            <use href="#svg-last"></use>
+          </svg>
+        </div>
+        <div class="circle-btn unactive-btn rotated-btn">
+          <svg width="10" height="11">
+            <use href="#svg-next"></use>
+          </svg>
+        </div>
+        <div class="circle-btn filled-btn">
+          <h4>1</h4>
+        </div>
+        <div class="circle-btn hover-light">
+          <svg width="10" height="11">
+            <use href="#svg-next"></use>
+          </svg>
+        </div>
+        <div class="circle-btn hover-light">
+          <svg width="25" height="11">
+            <use href="#svg-last"></use>
+          </svg>
+        </div>
+      </div>
+    </main>
+    <footer id="section-footer">
+      <div class="container">
+        <div class="footer-block">
+          <h3>For questions and suggestions</h3>
+          <a href="mailto:email@shelter.com" class="footer-block__item footer-block--bigger-m">
+            <img src="../../assets/icons/mail.svg" alt="mail">
+            <h4>email@shelter.com</h4>
+          </a>
+          <a href="tel:+136745677554" class="footer-block__item">
+            <img src="../../assets/icons/phone.svg" alt="phone">
+            <h4>+13 674 567 75 54</h4>
+          </a>
+        </div>
+        <div class="footer-block">
+          <h3>We are waiting for your visit</h3>
+          <a href="https://goo.gl/maps/wEXj7RdAWYiiKi1m9" target="_blank" class="footer-block__item footer-block--smaller-m">
+            <img src="../../assets/icons/pin.svg" alt="pin">
+            <h4>1 Central Street, Boston<br>(entrance from the store)</h4>
+          </a>
+          <a href="https://goo.gl/maps/wEXj7RdAWYiiKi1m9" target="_blank" class="footer-block__item">
+            <img src="../../assets/icons/pin.svg" alt="pin">
+            <h4>18 South Park, London</h4>
+          </a>
+        </div>
+        <img src="../../assets/pictures/footer-puppy.png" alt="footer-puppy">
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="../../scripts/parsePets.js"></script>
+  <script src="../../scripts/burger.js"></script>
+  <script type="module" src="../../scripts/popup.js"></script>
+  <script type="module" src="../../scripts/paginator.js"></script>
+</body>
+</html>

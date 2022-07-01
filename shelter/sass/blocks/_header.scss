@@ -1,0 +1,135 @@
+.head {
+  background: $background-gradient;
+  padding-top: 30px;
+
+  @media screen and (max-width: 1280px) {
+    padding-top: 0px;
+  }
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+
+  @media screen and (max-width: 767px) {
+    justify-content: right;
+  }
+
+  &__logo {
+    position: relative;
+    // z-index: 4;
+    
+  }
+}
+
+.logo-subtitle {
+  padding-left: 3px;
+}
+
+.nav-list {
+
+  &__item {
+    float: left;
+    position: relative;
+    
+    a {
+      &:hover {
+        color: $color-light-l;
+      }
+      transition: color .3s ease;
+      color: $color-dark-s;
+    }
+    @media screen and (max-width: 767px) {
+      width: fit-content;
+    }
+  }
+
+  &--selected{
+    a {
+      color: $color-light-s;
+    }
+    
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-color: $color-primary;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      bottom: -3px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    &__item a {
+      @include paragraph-mobile-menu;
+    }
+
+    &--selected a {
+      color: $color-light-s;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    li + li {
+      margin-left: 35px;
+    }
+  }
+
+  list-style: none;
+
+  &--pc {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  
+  &--mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    height: 100%  
+  }
+}
+
+.burger-icon {
+  position: relative;
+  // z-index: 4;
+  display: none;
+  width: 30px;
+  height: 22px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 42px;
+  transition: transform ease .3s;
+  @media screen and (max-width: 767px) {
+    display: flex;
+  }
+
+  &__line {
+    display: none;
+    height: 2px;
+    background-color: $color-primary;
+
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+}
+
+// burger nav
+
+.nav-list {
+  
+
+  
+}
